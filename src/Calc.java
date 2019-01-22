@@ -1,4 +1,7 @@
+import java.util.Scanner;
+
 public class Calc {
+
     int calculation(int a, int b){
         if (a>b){
             return a+b;

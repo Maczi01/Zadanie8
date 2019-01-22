@@ -1,9 +1,16 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+
         Calc calc = new Calc();
-        System.out.println(calc.calculation(6,5));
-        System.out.println(calc.calculation(4,7));
-        System.out.println(calc.calculation(8,8));
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Podaj pierwsza liczbe: ");
+        int a = scanner.nextInt();
+        System.out.println("Podaj druga liczbe: ");
+        int b = scanner.nextInt();
+        System.out.println(calc.calculation(a,b));
     }
 }
